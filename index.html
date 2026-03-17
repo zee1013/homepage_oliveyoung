@@ -1,175 +1,274 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>올리브영</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
+    <!-- 폰트어썸 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
     <!-- 전체 -->
-     <div class="wrap">
-        <!-- 헤더 -->
-         <header>
-            <!-- 로고 -->
+    <div class="wrap">
+      <!-- 헤더 -->
+      <header class="header">
+        <div class="inner">
+          <!-- 로고 -->
+          <a href="#">
             <h1 class="logo"><em>OLIVE YOUNG</em></h1>
-            <!-- 검색창 -->
-             <form>
-                <input type="search" name="" id="search">
-             </form>
-             <!-- 유저 -->
-                <ul class="user">
-                    <li><a href="#">회원가입</a></li>
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#">장바구니</a></li>
-                    <li><a href="#">주문배송</a></li>
-                </ul>
-            </header>
-            <!-- 네비게이션 -->
-             <nav class="navi">
-                <ul>
-                    <li><a href="#">카테고리</a></li>
-                    <li><a href="#">오특</a></li>
-                    <li><a href="#">랭킹</a></li>
-                    <li><a href="#">테마관</a></li>
-                    <li><a href="#">기획전</a></li>
-                    <li><a href="#">올리브베러</a></li>
-                    <li><a href="#">세일</a></li>
-                    <li><a href="#">멤버십/쿠폰</a></li>
-                    <li><a href="#">이벤트</a></li>
-                </ul>
-             </nav>
-         <!-- 메인 -->
-          <main>
-            <!-- 이미지 박스 -->
-             <div class="img-box">
-                <img src="images/img-box.jpg" alt="배너">
+          </a>
+          <!-- 검색창 -->
+          <div class="search">
+            <form>
+              <input type="search" name="" id="search" />
+            </form>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </div>
+          <!-- 유저 -->
+          <ul class="user">
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">장바구니</a></li>
+            <li><a href="#">주문배송</a></li>
+          </ul>
+        </div>
+        <!-- 네비게이션 -->
+        <div class="nav-wrap">
+          <div class="inner">
+            <nav class="nav">
+              <ul>
+                <li class="nav-list"><a href="#">☰ 카테고리</a></li>
+                <li><a href="#">오특</a></li>
+                <li><a href="#">랭킹</a></li>
+                <li><a href="#">테마관</a></li>
+                <li><a href="#">기획전</a></li>
+                <li><a href="#">올리브베러</a></li>
+                <li><a href="#">세일</a></li>
+                <li><a href="#">멤버십/쿠폰</a></li>
+                <li><a href="#">이벤트</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- 메인 -->
+      <main>
+        <!-- 이미지 박스 -->
+        <div class="img-box">
+          <img src="images/img-box.jpg" alt="배너" />
+          <div class="inner">
+            <div class="img-container">
+              <div class="img-text">
                 <p>올리브 멤버스</p>
-                <h2>이번달 등급 확인하고 혜택 받아가세요</h2>
-             </div>
-             <!-- 오직 올리브영에서만 -->
-              <div class="only">
-                <p>오직 올리브영에서만</p>
-                <ul>
-                    <li>
-                        <img src="images/only-1.jpg" alt="안경만두">
-                        <h3>안경만두의 <br>빨간안경 증정!</h3>
-                        <p>장바구니 쿠폰은 덤!</p>
-                    </li>
-                    <li>
-                        <img src="images/only-2.png" alt="라운드어라운드">
-                        <h3>라운드어라운드 <br>테토콜라보에디션</h3>
-                        <p>곰돌이키링 증정!</p>
-                    </li>
-                    <li>
-                        <img src="images/only-3.jpg" alt="먼작귀">
-                        <h3>먼작귀 에디션 <br>빅띠부씰 증정!</h3>
-                        <p>베이글칩 8종 골라담기</p>
-                    </li>
-                </ul>
+                <h2>이번달 등급 <br />확인하고 <br />혜택 받아가세요</h2>
               </div>
-              <!-- 이 상품 어때요? -->
-              <div class="product-wrap">
-                <p>이 상품 어때요?</p>
-                <!-- 윗줄 -->
-                <ul class="product">
-                    <li>
-                        <a href="#">
-                            <div class="product-img">
-                                <img src="images/list-1.jpg" alt="상품사진1">
-                            </div>
-                            <p>메디힐</p>
-                            <p>[3월 올영픽/15년 연속 1위]메디힐 에센셜 마스크팩10+1/10매 기획...</p>
-                            <p>10,000원~</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="product-img">
-                                <img src="images/list-2.jpg" alt="상품사진2">
-                            </div>
-                            <p>투에이엔</p>
-                            <p>투에이엔 아트 컬러링 브로우 카라/ 투에이엔 아트 스케치 브로우 펜슬</p>
-                            <p>6,900원~</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="product-img">
-                                <img src="images/list-3.png" alt="상품사진3">
-                            </div>
-                            <p>달바</p>
-                            <p>[3월 올영픽/생기톤업]달바 핑크 톤업 선크림 듀오 기획(50ml+50ml)</p>
-                            <p>32,900원</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="product-img">
-                                <img src="images/list-4.jpg" alt="상품사진4">
-                            </div>
-                            <p>라운드랩</p>
-                            <p>[3월 올영픽/눈멍이스티커]라운드랩 자작나무 수분 선크림 50ml...</p>
-                            <p>24,500원</p>
-                        </a>
-                    </li>
-                </ul>
-                <!-- 아랫줄 -->
-                <ul class="product">
-                    <li>
-                        <a href="#">
-                            <div class="product-img">
-                                <img src="images/list-5.jpeg" alt="상품사진5">
-                            </div>
-                            <p>토리든</p>
-                            <p>[3월 올영픽/1위세럼]토리든 다이브인 저분자 히알루론산 세럼 50ml</p>
-                            <p>25,800원</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="product-img">
-                                <img src="images/list-6.jpg" alt="상품사진6">
-                            </div>
-                            <p>비플레인</p>
-                            <p>[망곰콜라보]비플레인 녹두 약산성 클렌징폼160ml 더블기획</p>
-                            <p>24,900원</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="product-img">
-                                <img src="images/list-7.jpg" alt="상품사진7">
-                            </div>
-                            <p>정샘물</p>
-                            <p>[3년연속1위쿠션]정샘물 에센셜 스킨 누더 쿠션/본품+리필</p>
-                            <p>34,800원~</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <div class="product-img">
-                                <img src="images/list-8.jpg" alt="상품사진8">
-                            </div>
-                            <p>메디힐</p>
-                            <p>[3월 올영픽/1위패드]메디힐더마패드 200매 대용량 기획 세트 7종...</p>
-                            <p>28,700원~</p>
-                        </a>
-                    </li>
-                </ul>
-              </div>
-          </main>
-          <!-- 푸터 -->
-           <footer>
+            </div>
+          </div>
+        </div>
+        <div class="inner">
+          <!-- 오직 올리브영에서만 -->
+          <div class="only">
+            <p>오직 올리브영에서만</p>
             <ul>
-                <li><a href="#">회사소개</a></li>
-                <li><a href="#">채용안내</a></li>
-                <li><a href="#">가맹점 개설문의</a></li>
-                <li><a href="#">상품입점 문의</a></li>
-                <li><a href="#">대량 구매</a></li>
-                <li><a href="#">고객센터</a></li>
+              <li>
+                <img src="images/only-1.jpg" alt="안경만두" />
+                <h3>안경만두의 <br />빨간안경 증정!</h3>
+                <p>장바구니 쿠폰은 덤!</p>
+              </li>
+              <li>
+                <img src="images/only-2.png" alt="라운드어라운드" />
+                <h3>라운드어라운드 <br />테토콜라보에디션</h3>
+                <p>곰돌이키링 증정!</p>
+              </li>
+              <li>
+                <img src="images/only-3.jpg" alt="먼작귀" />
+                <h3>먼작귀 에디션 <br />빅띠부씰 증정!</h3>
+                <p>베이글칩 8종 골라담기</p>
+              </li>
             </ul>
-           </footer>
-     </div>
-</body>
+          </div>
+          <!-- 이 상품 어때요? -->
+          <div class="product-wrap">
+            <p>이 상품 어때요?</p>
+            <div class="inner">
+              <!-- 윗줄 -->
+              <ul class="product">
+                <li>
+                  <a href="#">
+                    <div class="product-img">
+                      <img src="images/list-1.jpg" alt="상품사진1" />
+                    </div>
+                    <p>메디힐</p>
+                    <p>
+                      [3월 올영픽/15년 연속 1위]메디힐 에센셜 마스크팩10+1/10매
+                      기획...
+                    </p>
+                    <p>10,000원~</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="product-img">
+                      <img src="images/list-2.jpg" alt="상품사진2" />
+                    </div>
+                    <p>투에이엔</p>
+                    <p>
+                      투에이엔 아트 컬러링 브로우 카라/ 투에이엔 아트 스케치
+                      브로우 펜슬
+                    </p>
+                    <p>6,900원~</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="product-img">
+                      <img src="images/list-3.png" alt="상품사진3" />
+                    </div>
+                    <p>달바</p>
+                    <p>
+                      [3월 올영픽/생기톤업]달바 핑크 톤업 선크림 듀오
+                      기획(50ml+50ml)
+                    </p>
+                    <p>32,900원</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="product-img">
+                      <img src="images/list-4.jpg" alt="상품사진4" />
+                    </div>
+                    <p>라운드랩</p>
+                    <p>
+                      [3월 올영픽/눈멍이스티커]라운드랩 자작나무 수분 선크림
+                      50ml...
+                    </p>
+                    <p>24,500원</p>
+                  </a>
+                </li>
+              </ul>
+              <!-- 아랫줄 -->
+              <ul class="product">
+                <li>
+                  <a href="#">
+                    <div class="product-img">
+                      <img src="images/list-5.jpeg" alt="상품사진5" />
+                    </div>
+                    <p>토리든</p>
+                    <p>
+                      [3월 올영픽/1위세럼]토리든 다이브인 저분자 히알루론산 세럼
+                      50ml
+                    </p>
+                    <p>25,800원</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="product-img">
+                      <img src="images/list-6.jpg" alt="상품사진6" />
+                    </div>
+                    <p>비플레인</p>
+                    <p>
+                      [망곰콜라보]비플레인 녹두 약산성 클렌징폼160ml 더블기획
+                    </p>
+                    <p>24,900원</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="product-img">
+                      <img src="images/list-7.jpg" alt="상품사진7" />
+                    </div>
+                    <p>정샘물</p>
+                    <p>
+                      [3년연속1위쿠션]정샘물 에센셜 스킨 누더 쿠션/본품+리필
+                    </p>
+                    <p>34,800원~</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="product-img">
+                      <img src="images/list-8.jpg" alt="상품사진8" />
+                    </div>
+                    <p>메디힐</p>
+                    <p>
+                      [3월 올영픽/1위패드]메디힐더마패드 200매 대용량 기획 세트
+                      7종...
+                    </p>
+                    <p>28,700원~</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- 푸터 -->
+      <footer class="footer">
+        <div class="inner">
+          <ul class="footer-top">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">채용안내</a></li>
+            <li><a href="#">가맹점 개설문의</a></li>
+            <li><a href="#">상품입점 문의</a></li>
+            <li><a href="#">대량 구매</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+        </div>
+        <div class="footer-middle">
+            <div class="inner">
+              <!-- 로고 -->
+              <div class="footer-logo">
+                <a href="#"><h1><em>OLIVE YOUNG</em></h1></a>
+              </div>
+              <!-- 사업자/개인정보처리방침... -->
+              <div class="footer-info">
+                <ul>
+                  <li><b>씨제이올리브영 주식회사</b></li>
+                  <li>대표이사:이선정|사업자등록번호:809-81-01574</li>
+                  <li>
+                    주소:(04324)서울특별시 용산구 한강대로 372, 24층 <br />
+                    (동자동,KDB타워)
+                  </li>
+                  <li>호스팅사업자:CJ 올리브네트웍스</li>
+                  <li>통신판매업신고번호:2019-서울용산-1428</li>
+                  <li>이메일:oliveyoung@cj.net</li>
+                </ul>
+                <ul>
+                  <li><a href="#">이용약관과 정책 법적고지</a></li>
+                  <li>
+                    <a href="#"><b>개인정보처리방침</b></a>
+                  </li>
+                  <li><a href="#">청소년보호방침</a></li>
+                  <li><a href="#">고정형 영상정보처리기기 운영/관리 방침</a></li>
+                  <li><a href="#">이메일무단수집거부</a></li>
+                </ul>
+                <ul>
+                  <li><b>하나은행 구매안전 서비스</b></li>
+                  <li>
+                    올리브영은 현금 결제한 금액에 대해 <br />
+                    하나은행과 채무지급보증 계약을 체결 <br />
+                    하여 안전한 거래를 보장하고 있습니다
+                  </li>
+                  <li><a href="#">서비스 가입사실 확인</a></li>
+                </ul>
+                <div class="footer-info-btm">
+                    <ul>
+                        <li><a href="#">사업자 정보확인</a></li>
+                        <li>올리브영 홈페이지에서 판매되는 상품 중에는 올리브영에 입점한 개별 판매자가 판매하는 상품이 포함되어 있습니다. 개별 판매자의 판매 상품의 경우, 올리브영은 통신판매중개자로서 통신판매의 당사자가 아니며 판매자가 등록한 상품정보 및 거래 정보 등에 대하여 책임을 부담하지 않습니다.</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
