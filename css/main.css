@@ -24,6 +24,7 @@ li {
 }
 /* 헤더 */
 .header > .inner {
+  margin-bottom: 10px;
   padding: 10px 0;
   display: flex;
   justify-content: space-between;
@@ -44,12 +45,13 @@ li {
   justify-content: space-between;
   align-items: center;
   border: 2px solid #9bce26;
-  border-radius: 30px;
+  border-radius: 40px;
 }
 #search {
   width: 520px;
   padding: 10px;
   border: none;
+  font-size: 18px;
 }
 .search a i {
   width: 50px;
@@ -59,9 +61,21 @@ li {
 .user {
   /* width: 100%; */
   display: flex;
-  gap: 60px;
+  /* gap: 60px; */
   font-weight: bold;
   /* background-color: rgb(192, 183, 170); */
+}
+.user li a::after{
+  content: "";
+  display: inline-block;
+  margin: 0 20px;
+  width: 1px;
+  height: 12px;
+  background-color: #ccc;
+}
+.user li:last-child a::after {
+  width: 0;
+  margin: 0;
 }
 /* 네비게이션 */
 .nav-wrap {
@@ -82,6 +96,11 @@ li {
 .nav ul li a {
   padding: 20px 0;
   font-size: 20px;
+  font-weight: bold;
+}
+.nav ul li a:hover{
+  text-decoration: underline;
+  color: #9bce26;
 }
 .nav-list::after {
   content: "";
@@ -133,6 +152,7 @@ li {
 }
 /* 오직 올리브영에서만 */
 .only > p {
+  margin-top: 40px;
   padding: 20px 0;
   font-size: 24px;
   font-weight: bold;
@@ -175,6 +195,7 @@ li {
 /* 이 상품 어때요? */
 .product-wrap {
   position: relative;
+  margin-bottom: 40px;
   padding: 10px 0;
 }
 .product-wrap > p {
@@ -199,7 +220,7 @@ li {
 }
 .product {
   /* margin-bottom: 20px; */
-  padding: 50px 0;
+  padding: 40px 0;
   display: flex;
   gap: 40px;
 }
@@ -230,6 +251,7 @@ li {
   font-size: 18px;
 }
 .product li a p:nth-of-type(3) {
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: 24px;
   color: #9bce26;
@@ -244,12 +266,12 @@ li {
   position: relative;
 }
 .footer-top {
-  padding: 50px 0;
+  padding: 30px 0;
   display: flex;
   /* gap: 60px; */
 }
 .footer-top li a {
-  color: #aaa;
+  color: #333;
 }
 .footer-top li a:hover {
   text-decoration: underline;
@@ -266,27 +288,75 @@ li {
   width: 0;
 }
 /* 사업자/개인정보처리방침... */
-.footer-middle .inner{
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-between;
-    align-items: center;
+.footer-middle {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background-color: #f8f8f8;
+}
+.footer-middle .inner {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: center;
 }
 /* 푸터 로고 */
-.footer-logo{
-    width: 500px;
-    /* padding: 20px 0; */
-    margin-right: 120px;
-  font-size: 16px;
+.footer-logo h1 {
+  width: 300px;
+  padding: 20px 0;
+  margin-right: 120px;
+  font-size: 30px;
   font-weight: 800;
 }
-.footer-info{
-    /* position: relative; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+.footer-info {
+  margin: 50px 0;
+  /* position: relative; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
-.footer-info>ul{
-    width: calc(100% / 4);
+.footer-info > ul {
+  width: calc(100% / 4);
+}
+.footer-info ul li,
+.footer-info ul li a {
+  padding: 3px 0;
+  color: #888;
+}
+.footer-info ul li b {
+  text-decoration: underline;
+  color: #333;
+}
+.footer-info>ul li:first-child b{
+  text-decoration: none;
+}
+/* 푸터 정보처리/카피라이트 */
+.footer-btm {
+  text-align: center;
+  background-color: #fff;
+}
+.footer-copy {
+  padding: 30px 0;
+}
+.footer-copy ul {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: #666;
+}
+.footer-copy li::after {
+  content: "";
+  display: inline-block;
+  margin: 0 20px;
+  width: 1px;
+  height: 12px;
+  background-color: #ccc;
+}
+.footer-copy li:last-child::after {
+  width: 0;
+}
+.footer-copy p {
+  font-weight: bold;
+  color: #666;
 }
